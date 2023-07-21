@@ -19,11 +19,11 @@ interface ListingInfoProps {
   guestCount: number;
   roomCount: number;
   bathroomCount: number;
-  category: {
-    icon: IconType,
-    label: string;
-    description: string;
-  } | undefined
+  // category: {
+  //   icon: IconType,
+  //   label: string;
+  //   description: string;
+  // } | undefined
   locationValue: string;
 }
 
@@ -33,7 +33,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
   guestCount,
   roomCount,
   bathroomCount,
-  category,
+  // category,
   locationValue,
 }) => {
   const { getByValue } = useCountries();
@@ -77,13 +77,13 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
         </div>
       </div>
       <hr />
-      {category && (
+      {/* {category && (
         <ListingCategory
           icon={category.icon} 
           label={category?.label}
           description={category?.description} 
         />
-      )}
+      )} */}
       <hr />
       <div className="
       text-lg font-light text-neutral-500">
